@@ -21,6 +21,10 @@
   },
   "main": "dist/ng2-qrcode.js",
   "typings": "dist/ng2-qrcode",
+  "scripts": {
+    "prepublish": "typings install && tsc",
+    "postinstall": "typings install"
+  },
   "dependencies": {
     "qrcodejs2": "^0.0.2"
   },
